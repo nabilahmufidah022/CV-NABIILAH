@@ -1,174 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Simple ATS CV</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      padding: 20px;
-      color: #333;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-
-    .header p {
-      font-size: 1.2em;
-      color: #666;
-    }
-
-    .section {
-      margin-bottom: 20px;
-    }
-
-    .section h2 {
-      font-size: 1.8em;
-      margin-bottom: 10px;
-      color: #0073e6;
-      border-bottom: 2px solid #0073e6;
-      display: inline-block;
-    }
-
-    .experience h3 {
-      font-size: 1.5em;
-      color: #333;
-      margin-bottom: 5px;
-    }
-
-    .experience p {
-      font-size: 1.2em;
-      color: #666;
-    }
-
-    .experience ul {
-      margin-top: 5px;
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    .experience ul li {
-      margin-bottom: 10px;
-    }
-
-    .section ul {
-      list-style-type: none;
-    }
-
-    .section ul li {
-      font-size: 1.2em;
-      margin-bottom: 5px;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        padding: 10px;
-      }
-
-      .container {
-        padding: 15px;
-      }
-
-      .header h1 {
-        font-size: 2em;
-      }
-
-      .header p {
-        font-size: 1em;
-      }
-
-      .section h2 {
-        font-size: 1.5em;
-      }
-
-      .experience h3 {
-        font-size: 1.2em;
-      }
-
-      .experience p, .experience ul li, .section ul li {
-        font-size: 1em;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .experience, .skills, .education {
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>John Doe</h1>
-      <p>Web Developer</p>
-      <p>john.doe@example.com | (123) 456-7890 | www.johndoe.com</p>
-    </div>
-    
-    <div class="section">
-      <h2>Professional Summary</h2>
-      <p>Web Developer with 5+ years of experience in designing and developing user interfaces, testing, and debugging. Proven ability to create responsive, visually appealing websites and applications using modern development techniques.</p>
-    </div>
 
-    <div class="section">
-      <h2>Work Experience</h2>
-      <div class="experience">
-        <h3>Senior Web Developer</h3>
-        <p>XYZ Solutions | Jan 2018 - Present</p>
+<div class="container">
+    <div class="photo">
+        <img src="photo.jpg" alt="Mikel Leu">
+    </div>
+    <h1>Mikel Leu</h1>
+    <p>Email: <a href="mailto:mike.leu@example.com">mike.leu@example.com</a></p>
+    <p>Phone: 832-475-3163</p>
+    <p>Location: Los Gatos, CA</p>
+
+    <div class="section experience">
+        <h2>Experience</h2>
+        <h3>Netflix, Inc.</h3>
+        <p><strong>Senior Software Engineer</strong> | Feb 2020 - Present</p>
         <ul>
-          <li>Led the redesign and development of company’s website, resulting in a 40% increase in traffic.</li>
-          <li>Developed and maintained web applications using HTML, CSS, JavaScript, and React.js.</li>
-          <li>Collaborated with cross-functional teams to deliver high-quality projects.</li>
+            <li>Built and maintained 10+ internal web applications for Netflix's workforce and partners.</li>
+            <li>Mentor to 3 engineers.</li>
+            <li>Tech Lead for managing and prioritizing efforts across 40+ services.</li>
         </ul>
-      </div>
 
-      <div class="experience">
-        <h3>Web Developer</h3>
-        <p>ABC Corp | May 2015 - Dec 2017</p>
+        <h3>Inside Petroleum, Inc.</h3>
+        <p><strong>Lead Full Stack Software Engineer</strong> | Oct 2018 - Dec 2019</p>
         <ul>
-          <li>Developed user-friendly websites for multiple clients using modern web technologies.</li>
-          <li>Enhanced performance and responsiveness of websites by optimizing code.</li>
+            <li>Built enterprise-level Oil and Gas analytics web application.</li>
+            <li>Managed a startup dev team of 8.</li>
         </ul>
-      </div>
+        <!-- Additional experience entries can go here -->
     </div>
 
-    <div class="section">
-      <h2>Education</h2>
-      <p>Bachelor of Science in Computer Science | University of Somewhere | 2014</p>
+    <div class="section skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Cloud Infrastructure</li>
+            <li>Microservices</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+            <li>SQL</li>
+        </ul>
     </div>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>React.js, Vue.js</li>
-        <li>Responsive Design</li>
-        <li>Version Control (Git)</li>
-      </ul>
+    <div class="section education">
+        <h2>Education</h2>
+        <h3>University of Houston</h3>
+        <p><strong>Bachelor of Science</strong> | 2016</p>
+        <p>Major: Computer Science | Minor: Mathematics</p>
     </div>
+</div>
 
-    <div class="section">
-      <h2>Certifications</h2>
-      <p>Certified Web Developer | Web Development Institute | 2016</p>
-    </div>
-  </div>
 </body>
 </html>
